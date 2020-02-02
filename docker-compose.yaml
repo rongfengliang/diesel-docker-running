@@ -1,0 +1,10 @@
+version: "3"
+services: 
+  app:
+    build: ./
+  pg:
+    image: postgres:12.1-alpine
+    environment: 
+    - "POSTGRES_PASSWORD:dalong"
+    ports:
+    - "5432:5432"
